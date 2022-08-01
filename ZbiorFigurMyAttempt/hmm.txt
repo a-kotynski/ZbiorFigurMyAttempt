@@ -1,2 +1,2 @@
 ﻿UML link:
-https://www.is.umk.pl/~grochu/wiki/lib/exe/detail.php?id=zajecia%3Apo%3Acsharp_dziedziczenie&media=zajecia:po_2013_1:10_cs_figury:10_cs_figury.png
+https://www.is.umk.pl/~grochu/wiki/lib/exe/fetch.php?cache=&media=zajecia:po_2013_1:10_cs_figury:10_cs_figury.png

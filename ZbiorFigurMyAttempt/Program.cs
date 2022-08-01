@@ -21,11 +21,11 @@ namespace ZbiorFigurMyAttempt
         }
         public abstract object Clone();
         public abstract void Przesun(double x, double y);
-        public bool Operator()
+        public bool Operator(Figura a, Figura b)
         {
             //?
         }
-        public bool Operator()
+        public bool Operator(Figura a, Figura b)
         {
             //?
         }
@@ -61,13 +61,13 @@ namespace ZbiorFigurMyAttempt
         {
             return $"x:{x}, y: {y}";
         }
-        public double Odleglosc()
+        public double Odleglosc(Punkt punkt)
         {
-            //?
+            
         }
-        public double Odleglosc()
+        public double Odleglosc(Punkt punkt1, Punkt punkt2)
         {
-            //?
+            
         }
         public override object Clone()
         {
@@ -107,7 +107,7 @@ namespace ZbiorFigurMyAttempt
 
         }
     }
-    public class Kolo : Figura
+    public class Kolo : Figura // : IKonsola // interface implementation
     {
         private double Promien;
         private Punkt Srodek;
@@ -144,16 +144,57 @@ namespace ZbiorFigurMyAttempt
 
         }
     }
+    public interface IKonsola
+    {
+        public virtual void Wyswietl();
+        public virtual void Wczytaj();
+    }
     public class Wielobok : Figura
     {
         protected List<Punkt> Wierzcholki { get; set; } = new List<Punkt>();
-        public Punkt ///asdasdasdsdadas
+        public Wielobok(Punkt punkty) // in UML: (Punkt[] punkty)
+        {
+            Wierzcholki.Add(punkty);
+        }
+        public void DodajPunkt(Punkt punkt)
+        {
+
+        }
+        public override string ToString()
+        {
+            return $"Wierzchołki: {string.Join('\n', Wierzcholki)}";
+        }
+        public override double Obwod()
+        {
+
+        }
+        public override void Przesun(double x, double y)
+        {
+
+        }
+        public override object Clone()
+        {
+            object obj = new Wielobok();
+        }
     }
-    public interface IKonsola
+    public class Trojkat2 : Wielobok
     {
-        public void Wyswietl();
-        public void Wczytaj();
+        public Trojkat2(Punkt x1, Punkt x2, Punkt x3)
+        {
+            Wierzcholki.Add(x1);
+            Wierzcholki.Add(x2);
+            Wierzcholki.Add(x3);
+        }
+        public override string ToString()
+        {
+            return $"Wierzchołki: {string.Join('\n', Wierzcholki)}";
+        }
+        public override double Obwod()
+        {
+
+        }
     }
+
     class Program
     {
         static void Main(string[] args)
