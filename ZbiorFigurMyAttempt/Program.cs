@@ -143,6 +143,14 @@ namespace ZbiorFigurMyAttempt
         {
 
         }
+        public void Wyswietl()
+        {
+
+        }
+        public void Wczytaj()
+        {
+
+        }
     }
     public interface IKonsola
     {
