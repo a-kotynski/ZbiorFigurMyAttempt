@@ -36,5 +36,13 @@
         {
 
         }
+        public void Wyswietl()
+        {
+
+        }
+        public void Wczytaj()
+        {
+
+        }
     }
 }
