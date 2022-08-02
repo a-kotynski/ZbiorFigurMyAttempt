@@ -26,7 +26,7 @@
         }
         public override string ToString()
         {
-            return $"Promien: {Promien}, Środek: {Srodek}";
+            return $"Promien: {Promien}, Środek: {Srodek}, Obwód: {Obwod()}";
         }
         public override object Clone()
         {
