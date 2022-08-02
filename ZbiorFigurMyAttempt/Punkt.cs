@@ -33,11 +33,11 @@
         }
         public double Odleglosc(Punkt punkt)
         {
-            
+            return 0;
         }
         public double Odleglosc(Punkt punkt1, Punkt punkt2)
         {
-            
+            return Math.Sqrt(Math.Pow(punkt2.x - punkt1.x, 2) + Math.Pow(punkt2.y - punkt1.y, 2));
         }
         public override object Clone()
         {
