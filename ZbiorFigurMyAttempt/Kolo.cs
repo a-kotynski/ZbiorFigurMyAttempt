@@ -32,7 +32,7 @@
         {
             return new Kolo();
         }
-        public override void Przesun(double x, double y)
+        public override void Przesun(double xShift, double yShift)
         {
 
         }
