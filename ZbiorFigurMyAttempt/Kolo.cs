@@ -30,7 +30,7 @@
         }
         public override object Clone()
         {
-            object obj = new Kolo();
+            return new Kolo();
         }
         public override void Przesun(double x, double y)
         {

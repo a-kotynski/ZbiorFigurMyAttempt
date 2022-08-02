@@ -22,7 +22,7 @@
         }
         public override object Clone()
         {
-            object obj = new Trojkat();
+            return new Trojkat();
         }
         public override void Przesun(double x, double y)
         {

@@ -7,6 +7,7 @@
         {
             Wierzcholki.Add(punkty);
         }
+        public Wielobok() { }
         public void DodajPunkt(Punkt punkt)
         {
 
@@ -25,7 +26,7 @@
         }
         public override object Clone()
         {
-            object obj = new Wielobok();
+           return new Wielobok();
         }
     }
 }
