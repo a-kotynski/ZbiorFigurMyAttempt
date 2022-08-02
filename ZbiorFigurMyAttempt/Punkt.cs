@@ -41,7 +41,7 @@
         }
         public override object Clone()
         {
-            object obj = new Punkt();
+            return new Punkt();
         }
         public override void Przesun(double x, double y)
         {
