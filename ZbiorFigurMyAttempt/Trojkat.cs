@@ -14,7 +14,7 @@
         }
         public override double Obwod()
         {
-            
+
         }
         public override string ToString()
         {

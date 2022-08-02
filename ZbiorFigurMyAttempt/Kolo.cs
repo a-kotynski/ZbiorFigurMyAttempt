@@ -22,7 +22,7 @@
         }
         public override double Obwod()
         {
-
+            return 2 * Math.PI * Promien;
         }
         public override string ToString()
         {

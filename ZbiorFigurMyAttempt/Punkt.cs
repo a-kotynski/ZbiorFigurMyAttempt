@@ -43,9 +43,10 @@
         {
             return new Punkt();
         }
-        public override void Przesun(double x, double y)
+        public override void Przesun(double xShift, double yShift)
         {
-
+            x += xShift;
+            y += yShift;
         }
     }
 }
